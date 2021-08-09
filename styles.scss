@@ -1,137 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&display=swap');
-
-body{
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Playfair+Display:ital,wght@0,400;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
-}
-.content {
-  height: 700px;
-  display: flex;
-  background: rgb(185,92,80);
-background: linear-gradient(90deg, rgba(185,92,80,1) 0%, rgba(222,132,123,1) 49%, rgba(222,179,173,1) 100%);
-
-  .left {
-    flex: 1;
-
-    .left-content {
-      padding-left: 6em;
-      padding-right: 6em;
-      padding-top: 10em;
-      .title {
-        font-size: 4em;
-        font-weight: bold;
-        font-family: 'Lobster', cursive;
-        color: #F9F1F0;
-      }
-    }
-
-    
-    .line {
-      width: 100px;
-      height: 2px;
-      background-color: #F9F1F0;
-    }
-    .description {
-      margin-top: 1em;
-      padding-right: 1em;
-      font-size: 1.5em;
-    }
-
-    .button {
-      border: 1px solid gray;
-      width: 15em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 45px;
-      border-radius: 30px;
-      font-size: 1.2em;
-      margin-top: 1em;
-      cursor: pointer;
-    
-      
-
-
-      a {
-        text-decoration: none;
-        list-style-type: none;
-        color: black;
-
-      }
-      &:hover {
-        background-color:white;
-        color: white;
-      }
-    }
-  }
-
-  .right {
-    flex: 1;
-    height: 700px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    position: relative;
-   
-
-    .overlay {
-        position: absolute;
-        height: 700px;
-        width: 100%;
-        top: 0;
-        background-color: #B95C50        ;
-        opacity: 0.2;
-        z-index: 0;
-      }
-    
-       img {
-        width: 400px;
-        height: 400px;
-        object-fit: fill;
-        position: relative;
-        z-index: 2;
-        margin-bottom: 10em;
-      }
-  }
-
- 
+    margin: 0;
+    padding: 0;
 }
 
-
-// style for info
-
-.info{
-    height: 400px;
-    width: 100%;
-    position: relative;
+.content-top {
     display: flex;
-    justify-content: center;
-    align-items: start;
-
-    .box{
-       width: 50%;
+    position: relative;
+    .quotes {
         position: absolute;
-        background-color: #f0b58f;
+
         z-index: 100;
-        top: -3em;
-        height: 100px;
-        text-align: center;
-        justify-content: center;
-        font-family: 'Lobster', cursive;
+        padding-top: 5em;
+        padding-left: 10em;
+        padding-right: 10em;
+        .quotes1 {
+            color: #d9d9d9;
+            font-family: "Playfair Display", serif;
+            font-size: 50px;
 
-        .qoutes {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            width: 100%;
-            height: 80px;
-            font-family: 'Lobster', cursive;
+            line-height: 65px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            white-space: normal;
+            font-style: italic;
+        }
+        .quotes2 {
+            color: #d9d9d9;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 17px;
+            width: 50%;
+            line-height: 30px;
+            margin-top: 3em;
+            letter-spacing: 1px;
+            font-weight: 400;
+            white-space: normal;
+        }
+        .author {
+            font-weight: 500;
+            margin-top: 1em;
+            font-size: 4em;
+            color: #d9d9d9;
+            font-family: "WindSong", cursive;
         }
     }
 
+    .left {
+        flex: 1;
+        height: 700px;
+        background-color: #6d6971;
+    }
+    .right {
+        flex: 1;
+        height: 700px;
+        background-color: #454445;
+        position: relative;
+        img {
+            position: absolute;
+            height: 600px;
+            right: -10em;
+            bottom: 0px;
+        }
+    }
+}
+
+.write-by {
+    width: 100%;
+    padding: 2em 0;
+    background-color: rgb(59, 53, 74);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+        display: flex;
+        align-items: center;
+        padding-left: 8em;
+        .title {
+            font-size: 1.5em;
+            color: rgb(255, 255, 255);
+            letter-spacing: 2px;
+            font-family: "Roboto", sans-serif;
+        }
+        .name {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: "Roboto", sans-serif;
+            font-size: 1.3em;
+            margin-left: 1em;
+        }
+    }
+    .right {
+        display: flex;
+        padding-right: 8em;
+        align-items: center;
+        .title {
+            font-size: 1.5em;
+            color: rgb(255, 255, 255);
+            letter-spacing: 2px;
+            font-family: "Roboto", sans-serif;
+        }
+        .social-media {
+            display: flex;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 2em;
+            align-items: center;
+
+            i {
+                margin-left: 1em;
+                cursor: pointer;
+                &:hover {
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
+
+.bio {
+    font-weight: 400;
+    font-size: 3em;
+    letter-spacing: 4px;
+    padding-top: 2em;
+    width: 100%;
+    padding-left: 5em;
+    font-family: "Playfair Display", serif;
+    color: #0a1a2b;
+}
+
+.bio-description {
+    padding: 3em 12em;
+    display: flex;
+    .left {
+        flex: 1;
+        padding: 2em;
+        color: #6b6768;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+    .right {
+        flex: 1;
+        padding: 2em;
+        color: #6b6768;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 17px;
+        line-height: 30px;
+
+        font-weight: 400;
+
+        .btn {
+            width: 20em;
+            height: 45px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 2em;
+
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid rgb(59, 53, 74);
+            color: rgb(59, 53, 74);
+
+            i {
+                margin-left: 1em;
+                font-size: 1.5em;
+            }
+
+            &:hover {
+                color: white;
+                background-color: rgb(59, 53, 74);
+            }
+        }
+    }
 }
