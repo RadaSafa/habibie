@@ -1,4 +1,6 @@
 ## Dokumentasi
+### Wireframe :
+![Habibie](/images/wiframe_habbie.png "Habibie")
 ### Tools : 
 - HTML
 - CSS
